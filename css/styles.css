@@ -87,7 +87,7 @@ body {
      .link-tel {
 
         text-decoration: none;
-        font-family: Roboto,serif;
+        font-family: Roboto,sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -97,9 +97,10 @@ body {
 
 
      .link-mail {
-
+        display: inline-flex;
+        align-items: center;
         text-decoration: none;
-        font-family: Roboto,serif;
+        font-family: Roboto,sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -117,7 +118,7 @@ body {
          padding-bottom: 11px;
         
          text-decoration: none;
-        font-family: Roboto,serif;
+        font-family: Roboto,sans-serif;
         font-style: 400;
         font-weight: 700;
         font-size: 14px;
@@ -141,7 +142,10 @@ body {
          text-align: center;
         background: var(--secondary-bg-color);
         background-image: url(../images/new_photo.jpg);
-     }
+          background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+     }  
      .section-biss {
          padding-top: 30px;
      }
@@ -179,7 +183,7 @@ body {
      }
      .link-active-styles:hover {
          text-decoration: underline;
-         color: blue;
+         color: black;
      }
      .link-active-service { 
          display: inline-block;        
@@ -327,6 +331,42 @@ body {
          padding-top: 50px;
          padding-bottom: 94px;
      }
+     .iteam:nth-child(1)::before {
+         display: block;
+         content: "";
+        height: 70px;
+        background-image: url(../images/antenna\ 1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+     }
+     .iteam:nth-child(2)::before {
+        display: block;
+        content: "";
+       height: 80px;
+       background-image: url(../images/Group\ 2.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+    .iteam:nth-child(3)::before {
+        display: block;
+        content: "";
+       height: 70px;
+       background-image: url(../images/diagram\ 1.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+    .iteam:nth-child(4)::before {
+        display: block;
+        content: "";
+       height: 70px;
+       background-image: url(../images/astronaut\ 1.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
     .link-title-desinger {
        
        margin-top: 30px;
