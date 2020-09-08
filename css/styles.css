@@ -92,7 +92,19 @@ body {
     
     
      
-     .link-tel {
+     .iteam-header .link-tel {
+        display: inline-flex; 
+        margin-top: 32px;
+        margin-bottom: 32px;
+        text-decoration: none;
+        font-family: Roboto,sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px; 
+        color: var(--gray) 
+     }
+     .way .link-tel {
         display: inline-flex; 
         text-decoration: none;
         font-family: Roboto,sans-serif;
@@ -115,7 +127,20 @@ body {
      }
 
 
-     .link-mail {
+     .iteam-header .link-mail {
+        display: inline-flex;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        align-items: center;
+        text-decoration: none;
+        font-family: Roboto,sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--active);
+     }
+     .way .link-mail {
         display: inline-flex;
         align-items: center;
         text-decoration: none;
@@ -141,15 +166,18 @@ body {
          background-repeat: no-repeat;
          background-position: left;
      }
+     .iteam-header .link {
+         margin-top: 32px;
+         margin-bottom: 32px;
+     }
 
      .link {
         display: block; 
-         padding-top: 32px;
-         padding-bottom: 11px;
+        padding-bottom: 11px;
         
          text-decoration: none;
         font-family: Roboto,sans-serif;
-        font-style: 400;
+        font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
@@ -226,7 +254,7 @@ body {
          min-width: 136px;
          width: 200px;
 
-        font-family: Roboto,serif;
+        font-family: Roboto,sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -240,7 +268,7 @@ body {
      }
      .link-active-service:hover {
          text-decoration: underline;
-         color: blue;
+         color: black;
 
      }
      .feature-list {
@@ -374,53 +402,30 @@ body {
          padding-top: 50px;
          padding-bottom: 94px;
      }
-     .iteam:nth-child(1)::before {
-         display: block;
-         content: "";
-        height: 70px;;
-        background-image: url(../images/antenna\ 1.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-       
-     }
- .iteam:nth-child(1){
-     display: block;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: var(--icons-bg-color);
- }
-     .iteam:nth-child(2)::before {
-        display: block;
-        content: "";
-       height: 70px;
-       background-image: url(../images/Group\ 2.png);
-       background-size: contain;
-       background-repeat: no-repeat;
-       background-position: center;
-       background-color: var(--icons-bg-color);
+    .iteam-ul {
+        
+        list-style-type: none;
+        display: flex;
     }
-    .iteam:nth-child(3)::before {
-        display: block;
-        content: "";
-       height: 70px;
-       background-image: url(../images/diagram\ 1.png);
-       background-size: contain;
-       background-repeat: no-repeat;
-       background-position: center;
-       background-color: var(--icons-bg-color);
+    .itram-li:not(:last-child) {
+        margin-right: 30px;
     }
-    .iteam:nth-child(4)::before {
-        display: block;
-        content: "";
-       height: 70px;
-       background-image: url(../images/astronaut\ 1.png);
-       background-size: contain;
-       background-repeat: no-repeat;
-       background-position: center;
-       background-color: var(--icons-bg-color);
+    .iteam-icon {
+        margin-top: 94px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        width: 270px;
+        height: 120px; 
+        background: var(--icons-bg-color);
+        border-radius: 4px; 
     }
+    .svg-iteam {
+        width: 65px;
+        height: 70px;
+    }
+    
     .link-title-desinger {
        
        margin-top: 30px;
@@ -546,7 +551,9 @@ body {
    .svg-social {
        width: 44px;
        height: 44px;
+      color: #AFB1B8;
    }
+  
    .link-title-des {
     margin-left: 70px;
     margin-right: 70px;
