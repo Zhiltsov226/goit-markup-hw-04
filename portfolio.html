@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=fallback"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
 </head>
@@ -11,19 +15,33 @@
     <!--шапка-2-->
     <header>
         <div class="container  main-div">
-        <nav class="nav-header">
-            <a href="./index.html" class="logo">
-                <img src="./images/logo.svg" alt="логотип" /></a>
-            <ul class="site-nav">
-                    <li class="iteam-header"><a class="link" href="">Студия</a></li>
-                    <li class="iteam-header"><a class="link-active-styles" href="Портфолио">Портфолио</a></li>
-                    <li class="iteam-header"><a class="link" href="">Контакты</a></li>
-                </ul>
+            <div class="div-head"> 
+                <a href="./" lang="en" class="logo">Web<span class="logotip">Studio</span></a>    
+       </div>
+       <ul class="site-nav">
+        <li class="iteam-header"><a class="link-active-styles" href="./index.html">Студия</a></li>
+        <li class="iteam-header"><a class="link-active-styles current" href="#">Портфолио</a></li>   
+        <li class="iteam-header"><a class="link-active-styles" href="#">Контакты</a></li>   
+    </ul>
               
           </nav>
                 <ul class="auth-nav">
-                    <li class="iteam-header"><a class="link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="iteam-header"><a class="link-tel" href="tel:+380961111111">+380961111111</a></li>
+                    <li class="iteam-header">
+                        <a class="link-mail" href="mailto:info@devstudio.com">
+                        <svg class="icon-mail">
+                            <use href="images/svg/tel/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                       </a> 
+                   </li>
+                    <li class="iteam-header">
+                        <a class="link-tel" href="tel:+380961111111">
+                            <svg class="icon-tel">
+                                <use  href="images/svg/tel/symbol-defs.svg#icon-Vector"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                       </li>
                 </ul>  
             </div>  
     </header>
@@ -33,7 +51,7 @@
              <!--Контент-->
              <ul class="section-auth">
 
-               <li class="button-main"><button class="link-active-button"><a class="all" href="Все">Все</a></button></li>
+               <li class="button-main"><button class="link-active-button">Все</button></li>
                <li class="button-main"><button class="button">Веб-сайты</button></li>
                <li class="button-main"><button class="button">Приложения</button></li>
                <li class="button-main"><button class="button">Дизайн</button></li>
@@ -46,101 +64,114 @@
               <ul class="images-conteiner">
                 
                     
-                    <li class="flex-element">
-                        <div>
-                     <a href="./images/technocryk.jpg"><img src="./images/technocryk.jpg" width="370" alt="технокряк"/></a>
-                                    <h3>Технокряк</h3>
-                                <p class="link-title">Веб-сайт</p>
-                    </div>           
-                  </li>
-                 
-
-               
-                  <li class="flex-element">
+                <li class="flex-element">
                     <div>
-                      <a href="./images/sport.jpg"><img src="./images/sport.jpg" width="370" alt="спорт"/></a>
-                            <h3 class="star">Постер New Orlean vs Golden Star</h3>
-                               <p class="link-title">Дизайн</p>
-                    </div>
-                  </li> 
-                    
-                   
-                  <li class="flex-element">
-                    <div>          
-                      <a href="./images/fish.jpg"><img src="./images/fish.jpg" width="370" alt="рыба"/></a>
-                             <h3>Ресторан Seafood</h3>
-                             <p class="link-title">Приложение</p>
-                    </div>        
-                   </li>
-                   
-                     
-                    <li class="flex-element">  
-                        <div>
-                        <a href="./images/headphones.jpg"><img src="./images/headphones.jpg" width="370" alt="наушники"/></a>
-                                 <h3>headphones</h3>
-                               <p class="link-title">Маркетинг</p>
-                        </div>       
-                    </li> 
-                    <li class="flex-element"> 
-                        <div>    
-                      <a href="./images/box.jpg"><img src="./images/box.jpg" width="370" alt="коробка"/></a> 
-                              <h3>Маркетинг</h3>  
-                              <p class="link-title">Приложение</p>
-                              </div>  
-                    </li>
-                    
-                    
-                    <li class="flex-element">  
-                        <div>        
-                       <a href="./images/monitor.jpg"><img src="./images/monitor.jpg"   width="370" alt="монитор"/></a>
-                                <h3>monitor</h3>  
-                              <p class="link-title">Веб-сайт</p>
-                              </div>
-                    </li>
-                  
-                     
-                    <li class="flex-element"> 
-                        <div>                                
-                      <img src="./images/books.jpg"  width="370" alt="книги"/> 
-                               <h3>Издание Limited Edition</h3>
-                               <p class="link-title">Дизайн</p>
-                         </div>
-                     </li> 
-                    
-                     <li
-                     class="flex-element">
-                        <div>
-                         <a href="./images/trinket.jpg"><img src="./images/trinket.jpg" width="370" alt="брелок"/></a>
-                                    <h3>Проект LAB</h3> 
-                                      <p class="link-title">Маркетинг</p>
-                         </div>
-                     </li>
-                    
-                    
-                     <li class="flex-element">
-                        <div>
-                         <a href="./images/nootbook.jpg"><img src="./images/nootbook.jpg" width="370" alt="ноутбук"/></a>
-                                    <h3>Growing Business</h3>
-                                    <p class="link-title">Приложение</p>
+                 <a href="./images/technocryk.jpg"><img src="./images/technocryk.jpg" width="370" alt="технокряк"/></a>
+                          <div class="title-portgolio">
+                                <h3 class="h-portofolio">Технокряк</h3>
+                            <p class="link-title">Веб-сайт</p>
+                          </div>
+                </div>           
+              </li>
+             
+
+           
+              <li class="flex-element">
+                <div>
+                  <a href="./images/sport.jpg"><img src="./images/sport.jpg" width="370" alt="спорт"/></a>
+                  <div class="title-portgolio">
+                        <h3 class="h-portofolio">Постер New Orlean vs Golden Star</h3>
+                           <p class="link-title">Дизайн</p>
+                          </div>
+                </div>
+              </li> 
+                
+               
+              <li class="flex-element">
+                <div>          
+                  <a href="./images/fish.jpg"><img src="./images/fish.jpg" width="370" alt="рыба"/></a>
+                  <div class="title-portgolio">
+                         <h3 class="h-portofolio">Ресторан Seafood</h3>
+                         <p class="link-title">Приложение</p>
                         </div>
-                     </li> 
-                  
-                        
-                       
+                </div>        
+               </li>
+               
+                 
+                <li class="flex-element">  
+                    <div>
+                    <a href="./images/headphones.jpg"><img src="./images/headphones.jpg" width="370" alt="наушники"/></a>
+                    <div class="title-portgolio">
+                             <h3 class="h-portofolio">headphones</h3>
+                           <p class="link-title">Маркетинг</p>
+                          </div>
+                    </div>       
+                </li> 
+                <li class="flex-element"> 
+                    <div>    
+                  <a href="./images/box.jpg"><img src="./images/box.jpg" width="370" alt="коробка"/></a> 
+                  <div class="title-portgolio">
+                          <h3 class="h-portofolio">Маркетинг</h3>  
+                          <p class="link-title">Приложение</p>
+                        </div>
+                          </div>  
+                </li>
+                
+                
+                <li class="flex-element">  
+                    <div>        
+                   <a href="./images/monitor.jpg"><img src="./images/monitor.jpg"   width="370" alt="монитор"/></a>
+                   <div class="title-portgolio">
+                            <h3 class="h-portofolio">monitor</h3>  
+                          <p class="link-title">Веб-сайт</p>
+                          </div>
+                      </div>
+                </li>
+              
+                 
+                <li class="flex-element"> 
+                                                   
+                 <a href="./images/books.jpg"><img src="./images/books.jpg"  width="370" alt="книги"/> </a>
+                  <div class="title-portgolio">
+                           <h3 class="h-portofolio">Издание Limited Edition</h3>
+                           <p class="link-title">Дизайн</p>
+                           </div>
+                     
+                 </li> 
+                
+                 <li class="flex-element">
                     
-              </ul>
+                     <a href="./images/trinket.jpg"><img src="./images/trinket.jpg" width="370" alt="брелок"/></a>
+                     <div class="title-portgolio">
+                                <h3 class="h-portofolio">Проект LAB</h3> 
+                                  <p class="link-title">Маркетинг</p>
+                                  </div>
+                     
+                 </li>
+                
+                
+                 <li class="flex-element">
+                    
+                     <a href="./images/nootbook.jpg"><img src="./images/nootbook.jpg" width="370" alt="ноутбук"/></a>
+                     <div class="title-portgolio">
+                                <h3 class="h-portofolio">Growing Business</h3>
+                                <p class="link-title">Приложение</p>
+                    </div>
+                      </li> 
+                                     
+                   </ul>
               </div>
          </section>
-     </main>
+   </main>
      <!--конец-->
      <footer class="footer-contentc">
          <div class="container">
                 <!-- <div class="addres"> -->
                 <div class="fot-conteiner">
                     <div class="addres">
-                        <a href="./portfolio.html" class="logotip">
-                            <img src="./images/logo.svg" alt="логотип" /></a>
-                                  
+                        <div class="fot-div">
+                            <a href="./" lang="en" class="logo">Web<span class="logo-white">Studio</span>
+                          </div>
                          <address>
                              <ul class="footer-way">
                         <li class="ukr"><span class="siti">г. Киев, пр-т Леси Украинки, 26</span></li>
@@ -150,12 +181,12 @@
                          </address>
                     </div>
                      <div class="join-icon">
-                        <span><h3 class="join">присоединяйтесь </h3></span>
-                        <ul class="fot-ul-icon">
+                       <div><h3 class="join">присоединяйтесь </h3></div>
+                       <ul class="fot-ul-icon">
                         <li class="fot-icon">
                             <a class="icon" href="" aria-label="ссылка на instagram">
                            <svg class="fot-svg-icon">
-                               <use href="./images/svg/fottr/symbol-defs.svg#iconEllipse-5" ></use>
+                               <use href="./images/svg/imgO/symbol-defs.svg#iconinstagram" ></use>
                            </svg>
                         </a>
                         
@@ -164,7 +195,7 @@
                         <li class="fot-icon">
                             <a class="icon" href="" aria-label="ссылка на twitter">
                                 <svg class="fot-svg-icon">
-                                <use href="./images/svg/fottr/symbol-defs.svg#iconEllipse-8" ></use>
+                                <use href="./images/svg/imgO/symbol-defs.svg#icontwitter" ></use>
                             </svg>
                             </a>
     
@@ -172,14 +203,14 @@
                         <li class="fot-icon">
                             <a class="icon" href="" aria-label="ссылка на facebook">
                             <svg class="fot-svg-icon">
-                                <use href="./images/svg/fottr/symbol-defs.svg#iconEllipse-6" ></use>
+                                <use href="./images/svg/imgO/symbol-defs.svg#iconfacebook" ></use>
                             </svg>
                         </a>
                             </li>
                         <li class="fot-icon">
                             <a class="icon" href="" aria-label="ссылка на linkedin">
                                 <svg class="fot-svg-icon">
-                                    <use href="./images/svg/fottr/symbol-defs.svg#iconEllipse-7" ></use>
+                                    <use href="./images/svg/imgO/symbol-defs.svg#iconlinkedin" ></use>
                                 </svg>
                             </a>
                             </li>

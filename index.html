@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomeWork</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=fallback"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
      <link lang="en" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css">
   </head>
@@ -16,17 +20,29 @@
             <img src="./images/logo.svg" alt="логотип" /></a>
 
          <ul class="site-nav">
-             <li class="iteam-header"><a class="link-active-styles" href="Студия">Студия</a></li>
-             <li class="iteam-header"><a class="link" href="">Портфолио</a></li>   
-             <li class="iteam-header"><a class="link" href="">Контакты</a></li>   
+             <li class="iteam-header"><a class="link-active-styles current" href="">Студия</a></li>
+             <li class="iteam-header"><a class="link-active-styles" href="./portfolio.html">Портфолио</a></li>   
+             <li class="iteam-header"><a class="link-active-styles" href="">Контакты</a></li>   
          </ul>
         </nav>
          <ul class="auth-nav">
 
-             
-             <li class="iteam-header"><a class="link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-             <li class="iteam-header"><a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        
+            <li class="iteam-header">
+                <a class="link-mail" href="mailto:info@devstudio.com">
+                <svg class="icon-mail">
+                    <use href="./images/svg/tel/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+               </a> 
+           </li>
+            <li class="iteam-header">
+                <a class="link-tel" href="tel:+380961111111">
+                    <svg class="icon-tel">
+                        <use  href="./images/svg/tel/symbol-defs.svg#icon-Vector"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+                </li>
 
          </ul>
         </div>
@@ -46,41 +62,41 @@
 
          </section>
             <!--контент 2 -->
-        <section>
-            <div class="container">
-                <ul class="iteam-ul">
-                    <li class="itram-li">
-                        <a class="iteam-icon" href="" aria-label="antenna">
-                            <svg class="svg-iteam">
-                                <use href="./images/svg/grop/symbol-defs.svg#iconantenna-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="itram-li">
-                        <a class="iteam-icon" href="" aria-label="clock">
-                            <svg class="svg-iteam">
-                                <use href="./images/svg/grop/symbol-defs.svg#iconclock-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="itram-li">
-                        <a class="iteam-icon" href="" aria-label="diagram">
-                            <svg class="svg-iteam">
-                                <use href="./images/svg/grop/symbol-defs.svg#icondiagram-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="itram-li">
-                        <a class="iteam-icon" href="" aria-label="astronaut">
-                            <svg class="svg-iteam">
-                                <use href="./images/svg/grop/symbol-defs.svg#iconastronaut-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-             
-             
-                </ul>
-               
+            <section>
+                <div class="container">
+                    <ul class="iteam-ul">
+                        <li class="itram-li">
+                            <a class="iteam-icon" href="" aria-label="antenna">
+                                <svg class="svg-iteam">
+                                    <use href="./images/svg/grop/symbol-defs.svg#iconantenna-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="itram-li">
+                            <a class="iteam-icon" href="" aria-label="clock">
+                                <svg class="svg-iteam">
+                                    <use href="./images/svg/grop/symbol-defs.svg#iconclock-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="itram-li">
+                            <a class="iteam-icon" href="" aria-label="diagram">
+                                <svg class="svg-iteam">
+                                    <use href="./images/svg/grop/symbol-defs.svg#icondiagram-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="itram-li">
+                            <a class="iteam-icon" href="" aria-label="astronaut">
+                                <svg class="svg-iteam">
+                                    <use href="./images/svg/grop/symbol-defs.svg#iconastronaut-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                 
+                 
+                    </ul>
+                   
             <ul class="feature-list">
                 <li class="iteam"><h3 class="link">Внимание к деталям</h3>
                 <p class="link-title">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -124,21 +140,22 @@
                 <li  class="img-team">
                     <div class="img-team-item">
                     <img src="./images/human2.jpg" width="270" alt="Photo"/>
-                
+                       <div>
                          <h3 class="link-title-developer">Ольга Репина</h3>
                          <p class="link-title-fron">Frontend Developer</p>
+                        </div>
                          <ul class="team-ul">
                              <li class="team-li">
                                <a class="team-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                     <svg class="svg-social">
-                                        <use href="./images/svg/imgO/symbol-defs.svg#iconEllipse-10"></use>
+                                        <use href="./images/svg/imgO/symbol-defs.svg#iconinstagram"></use>
                                     </svg>
                             </a>
                              </li>
                              <li class="team-li">
                                 <a class="team-social" href="https://www.twitter.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                      <svg class="svg-social">
-                                         <use href="./images/svg/symbol-defs.svg#iconEllipse-1"></use>
+                                         <use href="./images/svg/imgO/symbol-defs.svg#icontwitter"></use>
                                      </svg>
                              </a>
                               </li>
@@ -146,14 +163,14 @@
                             <li class="team-li">
                                <a class="team-social" href="https://www.facebook.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                     <svg class="svg-social">
-                                        <use href="./images/svg/symbol-defs.svg#iconEllipse-2"></use>
+                                        <use href="./images/svg/imgO/symbol-defs.svg#iconfacebook"></use>
                                     </svg>
                             </a>
                              </li>
                              <li class="team-li">
                                 <a class="team-social" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                      <svg class="svg-social">
-                                         <use href="./images/svg/symbol-defs.svg#iconEllipse-3"></use>
+                                         <use href="./images/svg/imgO/symbol-defs.svg#iconlinkedin"></use>
                                      </svg>
                              </a>
                               </li>
@@ -169,14 +186,14 @@
                             <li class="team-li">
                               <a class="team-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                    <svg class="svg-social">
-                                       <use href="./images/svg/imgO/symbol-defs.svg#iconEllipse-10"></use>
+                                       <use href="./images/svg/imgO/symbol-defs.svg#iconinstagram"></use>
                                    </svg>
                            </a>
                             </li>
                             <li class="team-li">
                                <a class="team-social" href="https://www.twitter.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                     <svg class="svg-social">
-                                        <use href="./images/svg/symbol-defs.svg#iconEllipse-1"></use>
+                                        <use href="./images/svg/imgO/symbol-defs.svg#icontwitter"></use>
                                     </svg>
                             </a>
                              </li>
@@ -184,14 +201,14 @@
                            <li class="team-li">
                               <a class="team-social" href="https://www.facebook.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                    <svg class="svg-social">
-                                       <use href="./images/svg/symbol-defs.svg#iconEllipse-2"></use>
+                                       <use href="./images/svg/imgO/symbol-defs.svg#iconfacebook"></use>
                                    </svg>
                            </a>
                             </li>
                             <li class="team-li">
                                <a class="team-social" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                     <svg class="svg-social">
-                                        <use href="./images/svg/symbol-defs.svg#iconEllipse-3"></use>
+                                        <use href="./images/svg/imgO/symbol-defs.svg#iconlinkedin"></use>
                                     </svg>
                             </a>
                              </li>
@@ -201,20 +218,24 @@
                 <li  class="img-team">
                     <div class="img-team-item">
                     <img src="./images/human.jpg" width="270" alt="Photo"/>
+                    <div>
                         <h3 class="link-title-product">Игорь Демьяненко</h3>       
                         <p class="link-title-des">Product Designer</p>
+                    </div>
+                    
+                        
                         <ul class="team-ul">
                             <li class="team-li">
                               <a class="team-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                    <svg class="svg-social">
-                                       <use href="./images/svg/symbol-defs.svg#iconEllipse-4"></use>
+                                       <use href="./images/svg/imgO/symbol-defs.svg#iconinstagram"></use>
                                    </svg>
                            </a>
                             </li>
                             <li class="team-li">
                                <a class="team-social" href="https://www.twitter.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                     <svg class="svg-social">
-                                        <use href="./images/svg/symbol-defs.svg#iconEllipse-1"></use>
+                                        <use href="./images/svg/imgO/symbol-defs.svg#icontwitter"></use>
                                     </svg>
                             </a>
                              </li>
@@ -222,14 +243,14 @@
                            <li class="team-li">
                               <a class="team-social" href="https://www.facebook.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                    <svg class="svg-social">
-                                       <use href="./images/svg/symbol-defs.svg#iconEllipse-2"></use>
+                                       <use href="./images/svg/imgO/symbol-defs.svg#iconfacebook"></use>
                                    </svg>
                            </a>
                             </li>
                             <li class="team-li">
                                <a class="team-social" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                     <svg class="svg-social">
-                                        <use href="./images/svg/symbol-defs.svg#iconEllipse-3"></use>
+                                        <use href="./images/svg/imgO/symbol-defs.svg#iconlinkedin"></use>
                                     </svg>
                             </a>
                              </li>
@@ -245,14 +266,14 @@
                             <li class="team-li">
                               <a class="team-social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                    <svg class="svg-social">
-                                       <use href="./images/svg/imgO/symbol-defs.svg#iconEllipse-10"></use>
+                                       <use href="./images/svg/imgO/symbol-defs.svg#iconinstagram"></use>
                                    </svg>
                            </a>
                             </li>
                             <li class="team-li">
                                <a class="team-social" href="https://www.twitter.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                     <svg class="svg-social">
-                                        <use href="./images/svg/symbol-defs.svg#iconEllipse-1"></use>
+                                        <use href="./images/svg/imgO/symbol-defs.svg#icontwitter"></use>
                                     </svg>
                             </a>
                              </li>
@@ -260,14 +281,14 @@
                            <li class="team-li">
                               <a class="team-social" href="https://www.facebook.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                    <svg class="svg-social">
-                                       <use href="./images/svg/symbol-defs.svg#iconEllipse-2"></use>
+                                       <use href="./images/svg/imgO/symbol-defs.svg#iconfacebook"></use>
                                    </svg>
                            </a>
                             </li>
                             <li class="team-li">
                                <a class="team-social" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferre" aria-label="ссылка Инстраграм">
                                     <svg class="svg-social">
-                                        <use href="./images/svg/symbol-defs.svg#iconEllipse-3"></use>
+                                        <use href="./images/svg/imgO/symbol-defs.svg#iconlinkedin"></use>
                                     </svg>
                             </a>
                              </li>
@@ -331,7 +352,7 @@
             </div>      
         </div>
        </section>
-    </main>
+       </main>
 
 
           <!-- конец -->
@@ -340,8 +361,9 @@
                 <!-- <div class="addres"> -->
                 <div class="fot-conteiner">
                     <div class="addres">
-                        <a href="./portfolio.html" class="logotip">
-                            <img src="./images/logo.svg" alt="логотип" /></a>
+                        <div class="fot-div">
+                            <a href="./" lang="en" class="logo">Web<span class="logo-white">Studio</span>
+                          </div>
                                   
                          <address>
                              <ul class="footer-way">
@@ -354,38 +376,38 @@
                      <div class="join-icon">
                         <span><h3 class="join">присоединяйтесь </h3></span>
                         <ul class="fot-ul-icon">
-                        <li class="fot-icon">
-                            <a class="icon" href="" aria-label="ссылка на instagram">
-                           <svg class="fot-svg-icon">
-                               <use href="./images/svg/fottr/symbol-defs.svg#iconEllipse-5" ></use>
-                           </svg>
-                        </a>
-                        
-                            
-                        </li>
-                        <li class="fot-icon">
-                            <a class="icon" href="" aria-label="ссылка на twitter">
-                                <svg class="fot-svg-icon">
-                                <use href="./images/svg/fottr/symbol-defs.svg#iconEllipse-8" ></use>
-                            </svg>
+                            <li class="fot-icon">
+                                <a class="icon" href="https://www.instagram.com/" aria-label="ссылка на instagram">
+                               <svg class="fot-svg-icon">
+                                   <use href="./images/svg/imgO/symbol-defs.svg#iconinstagram" ></use>
+                               </svg>
                             </a>
-    
-                        </li>
-                        <li class="fot-icon">
-                            <a class="icon" href="" aria-label="ссылка на facebook">
-                            <svg class="fot-svg-icon">
-                                <use href="./images/svg/fottr/symbol-defs.svg#iconEllipse-6" ></use>
-                            </svg>
-                        </a>
+                            
+                                
                             </li>
-                        <li class="fot-icon">
-                            <a class="icon" href="" aria-label="ссылка на linkedin">
+                            <li class="fot-icon">
+                                <a class="icon" href="https://www.twitter.com/" aria-label="ссылка на twitter">
+                                    <svg class="fot-svg-icon">
+                                    <use href="./images/svg/imgO/symbol-defs.svg#icontwitter" ></use>
+                                </svg>
+                                </a>
+        
+                            </li>
+                            <li class="fot-icon">
+                                <a class="icon" href="https://www.facebook.com/" aria-label="ссылка на facebook">
                                 <svg class="fot-svg-icon">
-                                    <use href="./images/svg/fottr/symbol-defs.svg#iconEllipse-7" ></use>
+                                    <use href="./images/svg/imgO/symbol-defs.svg#iconfacebook" ></use>
                                 </svg>
                             </a>
-                            </li>
-                        </ul>
+                                </li>
+                            <li class="fot-icon">
+                                <a class="icon" href="https://www.linkedin.com/" aria-label="ссылка на linkedin">
+                                    <svg class="fot-svg-icon">
+                                        <use href="./images/svg/imgO/symbol-defs.svg#iconlinkedin" ></use>
+                                    </svg>
+                                </a>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </div>
