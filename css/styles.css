@@ -9,6 +9,23 @@
    --icons-bg-company :#AFB1B8;
    --mainer-bg-color: #E5E5E5;
    --icons-bg-color:#F5F4FA;
+   --fot-nv-color: rgba(255, 255, 255, 0.6);
+}
+h2 {
+    margin: 0;
+}
+.site-nav {
+    margin: 0;
+}
+.auth-nav {
+    margin: 0;
+}
+.feature-list {
+    margin: 0;
+}
+.engaged-section {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .link {
     margin: 0;
@@ -52,8 +69,8 @@ body {
      
      .logo-head {
         display: inline-flex;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        margin-right: 94px;
+
        text-decoration: none;
        font-family: Raleway,sans-serif;
       
@@ -63,6 +80,7 @@ body {
        color: var(--active);
    }
     .logotip {
+        display: inline-block;
         text-decoration: none;
         font-family: Raleway,sans-serif;
        
@@ -71,36 +89,59 @@ body {
         line-height: 1.19;
         color: var(--black);
     }
-     .section-auth {
-         margin-top: 94px;
-         margin-bottom: 50px;
-        list-style-type: none;
-         margin-left: 239px;
-         display: flex;
-     }
-     .section-auth .button-main:not(:last-child) {
-        list-style-type: none;
-         margin-right: 8px;
-     }
-     .site-nav { 
-        list-style-type: none;
-         margin-left: 93px;
-        display:inline-flex;
-        padding-top: 32px;
-        padding-bottom: 32px;
-     }
-     .site-nav .iteam-header:not(:last-child) {
-        list-style-type: none;
-        margin-right: 50px;
-     }
-     .auth-nav {
-        list-style-type: none;
+    .main-div { 
         display: flex;
-        margin-left: auto;
-     }
-     .auth-nav .iteam-header+ .iteam-header {
-        margin-left: 50px;
-     }
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+    
+    .section-auth {
+       list-style-type: none;
+        margin-top: 100px;
+        margin-bottom: 56px;
+        margin-left: 239px;
+        display: flex;
+    }
+    .section-auth .button-main:not(:last-child) {
+       list-style-type: none;
+        margin-right: 8px;
+    }
+    nav {
+        display: flex;
+       align-items: center;
+    }
+    .site-nav { 
+       list-style-type: none;
+     
+        display: flex;
+       
+      
+    }
+    .site-nav .link-active-styles {
+        padding: 32px 0;
+        margin-right: 50px;
+        display: block;
+
+    }
+    .site-nav .iteam-header:last-child {
+       list-style-type: none;
+       margin-right: 0;
+    }
+    .auth-nav {
+       list-style-type: none;
+       display: flex;
+      
+    }  
+    .auth-nav .iteam-header+ .iteam-header {
+      margin-left: 50px;
+      display: block;
+    }
+    .auth-nav .iteam-header+ .iteam-header:last-child {
+      list-style-type: none;
+      margin-right: 0;  
+        
+    }
      .images-conteiner {
         
         list-style-type: none;
@@ -345,8 +386,7 @@ body {
      .feature-list .link-title {
         width: 270px;
         height: 75px;
-        left: 215px;
-        top: 800px;
+       
        
         
      }
@@ -416,7 +456,7 @@ body {
      padding-top: 20px;
     }
      .link-title {
-        padding-top: 4px;
+       
         padding-bottom: 20px;
         font-family: Roboto,sans-serif;
         font-style: 400;
@@ -426,57 +466,62 @@ body {
         letter-spacing: 0.03em;
         color: var(--gray);
      }
-     h2 { 
+    h2 { 
+          
+          text-align: center;
+          
+          margin-bottom: 50px;
+ 
+       
+         font-weight: 700;
+         font-size: 36px;
+         line-height: 1.16;
          
-         text-align: center;
-         margin-top: 94px;
-         margin-bottom: 40px;
-
-        font-family: Roboto,sans-serif;
-        font-style: 400;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        
-        letter-spacing: 0.03em;
-         color: var(--black);
-     }
-     .engaged-section {
+         letter-spacing: 0.03em;
+          color: var(--black);
+      }
+      .engaged-section {
         list-style-type: none;
         display: flex;
        
      }
-     .iteam-section {
-         margin-right: 30px;
+      .iteam {
+        margin-right: 30px;
         width: calc((100%-30px*2) / 3);
-        
-
+      }
+      .iteam:last-child {
+         margin-right: 0;
      }
-     .iteam-section:nth-child(4n) {
-        margin-right: 0;
-    }
-    .team-section {
-        flex-wrap: wrap;
-        list-style-type: none;
-        display: flex;
-        
-    }
-    .img-team {
-      
-        width: calc((100%-60) / 4);
-    }
-    .img-team-item {
-        background: #FFFFFF;
+     .team-section {
+         flex-wrap: wrap;
+         list-style-type: none;
+         display: flex;
+         
+     }
+     .img-team {
+         width: calc((100%-60) / 4);
+     }
 
+     .img-team-item {
+        background: var(--white-2);
+ 
         width: 270px;
         height: 428px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-    }
+     }
+     
+     
+     .img-team:not(:last-child) {
+         margin-right: 0;
+     }
+ 
+     .section-img {
+         padding-top: 94px;
+         padding-bottom: 94px;
+     }
    
-    .iteam-section .img-team:not(:last-child) {
-        margin-right: 0;
-    }
+  
 
     .iteam-ul {
          
@@ -650,6 +695,9 @@ body {
     color: var(--gray);
 
    }
+   .section-clients {
+       padding-top: 94px;
+   }
    .clients {
     font-family: Roboto,sans-serif;
     font-style: 400;
@@ -757,6 +805,22 @@ body {
    .way {
        padding-top: 9px;
    }
+   .way .link-mail {
+    font-style: normal;
+    color: var(--fot-nv-color);
+    }
+    .way .link-mail:hover,
+    .way .link-mail:focus {
+        color: var(--active);
+    }
+    .way .link-tel {
+        font-style: normal;
+        color: var(--fot-nv-color);
+    }
+    .way .link-tel:hover,
+    .way .link-tel:focus {
+        color: var(--active);
+    }
    .join-icon {
     display: inline-flex;
     flex-direction: column;
