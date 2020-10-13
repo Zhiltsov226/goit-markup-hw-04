@@ -178,11 +178,12 @@ body {
          border: 1px solid #EEEEEE;
         
      }
-     .flex-element:hover,
-     .flex-element:focus {
+     .flex-img:hover,
+     .flex-img:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
      }
-     a {
+     .flex-img {
+         display: block;
          text-decoration: none;
      }
      .flex-element:nth-child(3n) {
@@ -231,7 +232,7 @@ body {
         text-decoration: none;
         font-family: Roboto,sans-serif;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 14px;
         line-height: 16px; 
         color: var(--gray) 
@@ -270,7 +271,7 @@ body {
         text-decoration: none;
 
         font-family: Roboto,sans-serif;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 14px;
         line-height: 16px;
 
@@ -284,7 +285,7 @@ body {
 
         font-style: normal;
         font-family: Roboto,sans-serif;
-        font-weight:700;
+        font-weight: 500;
         font-size: 14px;
         line-height: 16px;
 
@@ -313,11 +314,10 @@ body {
 
      .link {
         display: block; 
-        padding-top: 32px;
-        padding-bottom: 11px;
+        margin-top: 32px;
+        margin-bottom: 11px;
        
       font-family: Roboto,sans-serif;
-       font-style: 400;
        font-weight: 700;
        font-size: 14px;
        line-height: 16px;
@@ -420,13 +420,7 @@ body {
          margin: 0;
      }   
      
-     .feature-list .link-title {
-        width: 270px;
-        height: 75px;
-       
-       
-        
-     }
+   
      .all {
          text-decoration: none;
          color: var(--white-2);
